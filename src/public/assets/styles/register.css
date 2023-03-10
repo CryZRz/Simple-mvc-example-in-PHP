@@ -1,0 +1,116 @@
+.register-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.register-container>section{
+    width: 50%;
+    height: 100%;
+}
+.register-section-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register-form{
+    width: 80%;
+    height: 90%;
+    padding: 8px;
+    box-shadow: 0px 0px 10px 1px #9d4edd;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-form>div{
+    width: 100%;
+}
+.register-form>div>div{
+    width: 90%;
+    margin: auto;
+}
+.register-form>div>div>h1{
+    color: #5a189a;
+    font-size: 30px;
+    margin: 8px;
+    margin-top: 10px;
+}
+.register-form>div>div>span{
+    display: block;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #9d4edd;
+}
+.register-form>div>div>input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #5a189a;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.register-section-form-alert{
+    text-align: center;
+    padding: 5px;
+    color: red;
+}
+.register-section-form-btn-login>button{
+    width: 100%;
+    padding: 10px;
+    background-color: #5a189a;
+    color: #ffff;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.register-section-form-btn-register>a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #5a189a;
+    color: #ffff;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.register-section-image-bg{
+    background-image: url(../images/registerBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Responsive styles*/
+@media (max-width: 1024px) {
+    .register-container{
+        height: 150vh;
+    }
+    .register-container{
+        flex-direction: column;
+    }
+    .register-container>section:nth-child(1){
+        width: 100%;
+        height: 80%;
+    }
+    .register-container>section{
+        width: 100%;
+        height: 50%;
+    }
+    .register-form{
+        height: auto;
+    }
+}

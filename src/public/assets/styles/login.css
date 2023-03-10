@@ -1,0 +1,113 @@
+.login-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.login-container>section{
+    width: 50%;
+    height: 100%;
+}
+.login-section-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form{
+    width: 80%;
+    height: 60%;
+    padding: 8px;
+    box-shadow: 0px 0px 10px 1px #9d4edd;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form>div{
+    width: 100%;
+}
+.login-form>div>div{
+    width: 90%;
+    margin: auto;
+}
+.login-form>div>div>h1{
+    color: #5a189a;
+    font-size: 30px;
+    margin: 8px;
+    margin-top: 10px;
+}
+.login-form>div>div>span{
+    display: block;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #9d4edd;
+}
+.login-form>div>div>input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #5a189a;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.login-section-form-alert{
+    text-align: center;
+    padding: 5px;
+    color: red;
+}
+.login-section-form-btn-login>button{
+    width: 100%;
+    padding: 10px;
+    background-color: #5a189a;
+    color: #ffff;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.login-section-form-btn-register>a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #5a189a;
+    color: #ffff;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.login-section-image-bg{
+    background-image: url(../images/loginBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Responsive styles*/
+@media (max-width: 1024px) {
+    .login-container{
+        flex-direction: column;
+    }
+    .login-container>section:nth-child(1){
+        width: 100%;
+        height: 80%;
+    }
+    .login-container>section{
+        width: 100%;
+        height: 50%;
+    }
+    .login-form{
+        height: auto;
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "cryz/task-app",
+    "autoload": {
+        "psr-4": {
+            "TaskApp\\": "src/"
+        }
+    },
+    "require": {}
+}
